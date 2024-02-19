@@ -1,5 +1,5 @@
 # Base image
-FROM openjdk:8
+FROM openjdk:11
 
 # Install git
 RUN apt-get update && \
