@@ -12,10 +12,10 @@ RUN git clone https://github.com/yahoo/CMAK.git /cmak
 WORKDIR /cmak
 
 # sbt clean and dist
-# RUN ./sbt clean dist
+RUN ./sbt clean dist
 
 EXPOSE 9000
 
 # Run the application
-# CMD ["./sbt", "run"]
-CMD ["/bin/sleep", "70000"]
+CMD ["./sbt", "run"]
+# CMD ["/bin/sleep", "70000"]
